@@ -3,7 +3,8 @@ num1=4
 num2=5
 sum=num1+num2
 print(sum)
-print(f"{num1} + {num2} = {sum}")
+
+print(f"{num1} + {num2} = {sum}")#f-strings is a convenient way to put variables and expressions directly inside a string.
 
 
 #2
@@ -29,6 +30,7 @@ num1=int(input("Enter first number: "))
 new_num1 = num1 + 5
 print(num1)
 print(new_num1)
+
 """
 
 #5 shorthand operators
@@ -69,9 +71,8 @@ print(name)
 length=len(name)
 print(length)
 
-#remove unnecessary gaps
 name="   alice   "
-name=name.strip()
+name=name.strip() #remove unnecessary gaps
 print(name)
 
 #check datatype
