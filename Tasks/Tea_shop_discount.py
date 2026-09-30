@@ -22,3 +22,19 @@ if item in menu:
 else:
     print("Sorry, we don't have that")
 
+"""
+Output:
+
+Menu: {'tea': 20, 'coffee': 50, 'momo': 150}
+What do you want? coffee
+How many? 4
+Total: Rs. 200
+The final bill: Rs.190.0
+
+when the item is unavailable
+ 
+Menu: {'tea': 20, 'coffee': 50, 'momo': 150}
+What do you want? cookies
+Sorry, we don't have that
+
+"""
