@@ -230,7 +230,7 @@ for n in [1, 2, 3]:
     sum += n
 print(sum)              # 6
 
-print(sum([4, 5]))
+#print(sum([4, 5]))
 # TypeError: 'int' object is not callable
 
 # Good names
@@ -238,6 +238,7 @@ total = 0
 items = [1, 2, 3]
 text = "hello"
 
+# practise
 names = ["Sita", "Ram", "Gita"]
 ages = [21, 19, 23]
 
