@@ -18,3 +18,11 @@ marks = [67, 45, 92, 78]
 low, high, avg,count= stats(*marks)
 
 print(f"Low: {low}, High: {high}, Average: {avg}, Count: {count}")
+
+"""
+Output:
+Low: 7, High: 45, Average: 23.5
+None
+Low: 45, High: 92, Average: 70.5, Count: 4
+
+"""
