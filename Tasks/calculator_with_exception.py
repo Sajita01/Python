@@ -39,3 +39,20 @@ while True:
     if again != "y":
         print("Calculator closed!")
         break
+
+    """
+    Output:
+    === Safe Calculator ===
+First number: 67
+Choose + - * / % ** : /
+Second number: 0
+You can't divide by zero!
+Again? (y/n): y
+First number: 56
+Choose + - * / % ** : +
+Second number: 9
+Answer: 65.0
+Again? (y/n): n
+Calculator closed!
+
+"""
