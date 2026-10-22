@@ -17,7 +17,7 @@ Print True/False: is the total over Rs 1000? Then print type(price)
 """
 
 Customer = input ("Enter your name :") .strip().title()
-item = input ("Enter the items name:") .strip().capitalize()
+item = input ("Enter the items name:") .strip().upper()
 code = item[:3].upper()
 
 quantity = int(input("Enter quantity: "))
@@ -39,17 +39,17 @@ print("Price type:", type(price))
 
 """
 Output:
-Enter your name :Riyaa
-Enter the items name:Tika Set
+Enter your name :riyaa
+Enter the items name:Tika set
 Enter quantity: 5
-Enter the item's price: 750
+Enter the item's price: 850
 
 --- Customer Bill ---
 Customer: Riyaa
-Item :Tika set (code: TIK)
+Item :TIKA SET (code: TIK)
 Quantity: 5
-Total : Rs 3750.00
-500 notes: 7, left Rs 250.00
+Total : Rs 4250.00
+500 notes: 8, left Rs 250.00
 Over 1000? True
 Price type: <class 'float'>
 
