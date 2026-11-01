@@ -1,4 +1,5 @@
-"""
+# Class and Object: A class is a blueprint for making objects. An object is an instance of a class. A class can have data (attributes) and actions (methods).
+# Why Classes?When data and actions belong together.
 print(type("hello"))      # <class 'str'>
 print(type([1, 2, 3]))    # <class 'list'>
 print(type(5))            # <class 'int'>
@@ -10,6 +11,7 @@ fruits = ["apple"]        # fruits is a list object
 fruits.append("mango")
 print(fruits)             # ['apple', 'mango']
 
+# Small example of a class and object:An empty blueprint. 
 class Student:
     pass              # empty for now
 
@@ -19,7 +21,7 @@ s2 = Student()        # make another object
 print(type(s1))       # <class '__main__.Student'>
 
 class Student:
-    pass
+    pass          # This tells Python: "Leave this class empty for now, don't throw an error."
 
 s1 = Student()
 s1.name = "Ram"       # s1's name
@@ -32,11 +34,11 @@ s2.age = 21           # s2's age
 print(s1.name)        # Ram
 print(s2.name)        # Sita
 
-# __init__ and self
+# __init__ and self : self is the object itself and  It is always the first input of a method. __init__ runs automatically when an object is made.
 
 class Student:
-    def __init__(self, name, age):
-        self.name = name
+    def __init__(self, name, age): # runs automatically when an object is made
+        self.name = name          # save data inside the object
         self.age = age
 
 s1 = Student("Ram", 20)
@@ -60,7 +62,7 @@ s1 = Student("Ram", 20)
 print(s1.name)    # Ram
 print(s1.age)     # 20
 
-#############
+# Starting values and changing data
 class Student:
     def __init__(self, name, age):
         self.name = name     # from the input
@@ -73,9 +75,7 @@ print(s1.marks)     # 0
 s1.marks = 85       # change it
 print(s1.marks)     # 85
 
-
-
-###############
+# Each object has its own data
 s1 = Student("Ram", 20)
 s2 = Student("Sita", 21)
 
@@ -84,6 +84,7 @@ s1.age = 25         # change only s1
 print(s1.age)       # 25
 print(s2.age)       # 21   (no change)
 
+# Guess the output
 class Mobile:
     def __init__(self, brand, price):
         self.brand = brand
@@ -95,11 +96,11 @@ m2 = Mobile("Redmi", 18000)
 
 m1.battery = 40
 
-print(m1.brand, m1.battery)
-print(m2.brand, m2.battery)
-print(m1.price + m2.price)
+print(m1.brand, m1.battery)  # Samsung 40
+print(m2.brand, m2.battery)  # Redmi 100
+print(m1.price + m2.price)   # # 48000
 
-#############
+# Methods: Functions that live inside a class. They are the object's actions.
 class Student:
     def __init__(self, name, age):
         self.name = name
@@ -114,8 +115,8 @@ s2 = Student("Sita", 21)
 s1.greet()      # Hi, I am Ram
 s2.greet()      # Hi, I am Sita
 
-
-########
+# Methods with inputs: a bank account
+# A method can change the object's data, and use if/else like any function.
 class BankAccount:
     def __init__(self, owner):
         self.owner = owner
@@ -137,7 +138,8 @@ acc.deposit(1000)      # Added Rs. 1000
 acc.withdraw(300)      # Took Rs. 300
 acc.withdraw(5000)     # Not enough money!
 print(acc.balance)     # 700
-##############
+
+# A method that returns a value
 class Rectangle:
     def __init__(self, length, width):
         self.length = length
@@ -157,7 +159,7 @@ print(r2.area())         # 16
 print(r1.is_square())    # False
 print(r2.is_square())    # True
 
-##############
+# Guess the output:
 class Cart:
     def __init__(self, owner):
         self.owner = owner
@@ -176,11 +178,11 @@ c1.add("momo")
 c1.add("tea")
 c2.add("chowmein")
 
-print(c1.count())
-print(c2.items)
-print(f"{c1.owner} has {c1.count()} items")
-"""
-##############
+print(c1.count()) # 2
+print(c2.items)   # ['chowmein']
+print(f"{c1.owner} has {c1.count()} items") # Ram has 2 items
+
+# Put everything together
 class Student:
     def __init__(self, name):
         self.name = name
