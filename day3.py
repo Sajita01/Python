@@ -18,7 +18,6 @@ tax_amount=total*tax
 final_total=total+tax_amount
 print(f"Total price : {total}")
 
-"""
 #3 input function
 num1=input("Enter first number: ")
 new_num1 = num1 + "5"
@@ -31,7 +30,7 @@ new_num1 = num1 + 5
 print(num1)
 print(new_num1)
 
-"""
+
 
 #5 shorthand operators
 
