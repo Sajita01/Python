@@ -38,13 +38,12 @@ print(fruits)  # Output: ['apple', 'kiwi', 'banana', 'orange']
 fruits.remove("banana")
 print(fruits)  # Output: ['apple', 'kiwi', 'cherry', 'orange']
 
-"""
+
 #using pop to remove items
 last= fruits.pop
 print(last) # output: orange
 print(fruits)  # Output: ['apple', 'kiwi', 'cherry']
 
-"""
 
 #search for an item in a list
 print("kiwi" in fruits)  # Output: True
