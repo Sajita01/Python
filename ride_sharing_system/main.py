@@ -82,11 +82,10 @@ def book_ride_flow():
     print(f"Distance: {distance} km")
     print(f"Fare: Rs. {fare}")
 
-
 # Main Program
 def main():
     while True:
-        print("\nRIDE SHARING SYSTEM ")
+        print("RIDE SHARING SYSTEM ")
         print("1. Book a ride")
         print("2. View ride history")
         print("3. Exit")
