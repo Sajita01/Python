@@ -1,7 +1,6 @@
 from abc import ABC, abstractmethod
 from exceptions import InvalidInputError, NegativeDistanceError
 
-
 # Abstract Parent Class
 class Vehicle(ABC):
 
