@@ -114,19 +114,14 @@ def main():
         except NegativeDistanceError as e:
             print("Distance Error:", e)
 
-        # Handle file errors
         except RideHistoryError as e:
             print("File Error:", e)
 
-        # Handle invalid number input
         except ValueError as e:
             print("Please enter a valid number:", e)
 
-        # Handle other file errors
         except OSError as e:
             print("File Error:", e)
 
-
-# Program Execution
 if __name__ == "__main__":
     main()
